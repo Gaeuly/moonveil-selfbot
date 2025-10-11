@@ -16,11 +16,13 @@
   "dependencies": {
     "@discordjs/voice": "^0.18.0",
     "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
     "discord.js-selfbot-v13": "^3.1.4",
     "dotenv": "^17.2.3",
     "debug": "^4.4.3",
     "figlet": "^1.9.3",
     "libsodium-wrappers": "^0.7.15",
+    "luxon": "^3.7.2",
     "opusscript": "^0.1.1"
   }
 }
