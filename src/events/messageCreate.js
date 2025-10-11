@@ -1,6 +1,14 @@
 const { Collection } = require('discord.js-selfbot-v13');
 
+// Import the autoreact checker
+const autoreact = require('../commands/management/autoreact');
+
 module.exports = async (client, message) => {
+    // Run autoreact check on every message
+    if (autoreact && typeof autoreact.check === 'function') {
+        autoreact.check(client, message);
+    }
+
     if (!client.user || !message || !message.author) return;
 
     if (message.author.id !== client.user.id) return;
