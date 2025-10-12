@@ -1,4 +1,4 @@
-const { toggleAI, setPrompt } = require('../../handlers/aiHandler');
+const { toggleAI, setPrompt } = require('../../handler/aiHandler');
 
 module.exports = {
     name: "ai",

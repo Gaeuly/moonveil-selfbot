@@ -1,5 +1,5 @@
 const { Collection } = require('discord.js-selfbot-v13');
-const aiHandler = require('../handlers/aiHandler');
+const aiHandler = require('../handler/aiHandler');
 const autoreact = require('../commands/management/autoreact');
 
 module.exports = async (client, message) => {
