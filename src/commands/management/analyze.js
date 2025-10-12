@@ -1,7 +1,7 @@
 module.exports = {
     name: 'analyze',
     description: 'Analyzes DMs or servers for detailed statistics.',
-    aliases: ['stats'],
+    aliases: ['analisis'],
     cooldown: 60,
     async execute(client, message, args) {
         const helpMessage = `**Analyze Command Help**

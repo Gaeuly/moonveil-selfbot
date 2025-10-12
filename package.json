@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/voice": "^0.18.0",
+    "@vitalets/google-translate-api": "^9.2.1",
     "axios": "^1.12.2",
     "cheerio": "^1.1.2",
     "discord.js-selfbot-v13": "^3.1.4",
@@ -26,6 +27,7 @@
     "jsqr": "^1.4.0",
     "libsodium-wrappers": "^0.7.15",
     "luxon": "^3.7.2",
+    "mathjs": "^15.0.0",
     "opusscript": "^0.1.1",
     "tinycolor2": "^1.6.0"
   }
