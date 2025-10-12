@@ -21,8 +21,12 @@
     "dotenv": "^17.2.3",
     "debug": "^4.4.3",
     "figlet": "^1.9.3",
+    "file-type": "^21.0.0",
+    "jimp": "^1.6.0",
+    "jsqr": "^1.4.0",
     "libsodium-wrappers": "^0.7.15",
     "luxon": "^3.7.2",
-    "opusscript": "^0.1.1"
+    "opusscript": "^0.1.1",
+    "tinycolor2": "^1.6.0"
   }
 }
