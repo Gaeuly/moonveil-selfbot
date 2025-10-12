@@ -1,17 +1,18 @@
 const { Collection } = require('discord.js-selfbot-v13');
-
-// Import the autoreact checker
+const aiHandler = require('../handlers/aiHandler');
 const autoreact = require('../commands/management/autoreact');
 
 module.exports = async (client, message) => {
-    // Run autoreact check on every message
+    if (!message || !message.author || message.author.bot) return;
+
     if (autoreact && typeof autoreact.check === 'function') {
         autoreact.check(client, message);
     }
 
-    if (!client.user || !message || !message.author) return;
-
-    if (message.author.id !== client.user.id) return;
+    if (message.author.id !== client.user.id) {
+        await aiHandler.handleAiResponse(client, message);
+        return;
+    }
 
     const prefix = process.env.PREFIX;
     if (!prefix || !message.content.startsWith(prefix)) return;
@@ -37,7 +38,7 @@ module.exports = async (client, message) => {
             try {
                 const reply = await message.reply(`Please wait ${timeLeft.toFixed(1)}s before reusing \`${command.name}\`.`);
                 setTimeout(() => reply.delete().catch(() => {}), 4000);
-            } catch (e) { /* ignore */ }
+            } catch (e) {}
             return;
         }
     }
@@ -51,6 +52,6 @@ module.exports = async (client, message) => {
         console.error(`Error executing command ${command.name}:`, error);
         try {
             await message.reply('There was an error trying to execute that command!');
-        } catch (e) { /* ignore */ }
+        } catch (e) {}
     }
 };
