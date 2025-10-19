@@ -3,7 +3,7 @@ const { delay } = require('../../utils/cloneUtils');
 module.exports = {
     name: "clonesticker",
     description: "Clones all stickers from a server using the direct URL method.",
-    aliases: ['copysticker','cs'],
+    aliases: ['copysticker'],
     cooldown: 120,
     async execute(client, message, args) {
         const sourceGuildId = args[0];
