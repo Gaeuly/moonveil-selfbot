@@ -33,7 +33,7 @@ async function findRobloxGame(query) {
 module.exports = {
     name: 'roblox',
     description: 'Displays a dynamic "Playing Roblox" status with real game data.',
-    aliases: ['playroblox', 'robloxrpc'],
+    aliases: ['playroblox', 'robloxstatus'],
     cooldown: 15,
     async execute(client, message, args) {
         const subCommand = args[0] ? args[0].toLowerCase() : 'help';
