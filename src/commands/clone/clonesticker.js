@@ -19,7 +19,6 @@ module.exports = {
         if (!sourceGuild) return message.edit(`❌ **Error:** Source server not found.`).catch(() => {});
         if (!targetGuild) return message.edit(`❌ **Error:** Target server not found.`).catch(() => {});
         
-        // We try to clone all available stickers, letting Discord's API handle the format.
         const stickersToClone = [...sourceGuild.stickers.cache.values()].filter(s => s.available);
         if (stickersToClone.length === 0) return message.edit('❕ No available stickers found to clone.');
 
@@ -31,11 +30,7 @@ module.exports = {
             await message.edit(`\`\`\`🎨 Cloning Stickers... [${i + 1}/${stickersToClone.length}]\nName: ${sticker.name}\`\`\``);
             
             try {
-                // --- STEALSTICKER LOGIC ---
-                // We pass the direct URL to the 'file' property.
-                // This lets Discord handle the download and validation.
-                
-                let emojiTag = '✨'; // Default tag
+                let emojiTag = '✨'; 
                 if (sticker.tags && typeof sticker.tags === 'string' && sticker.tags.length > 0) {
                     emojiTag = sticker.tags.split(',')[0].trim();
                 } else if (sticker.tags && Array.isArray(sticker.tags) && sticker.tags.length > 0) {
@@ -52,7 +47,6 @@ module.exports = {
                 await delay(3000); // Rate limit is still important.
             } catch (e) {
                 failed++;
-                // This will likely fail for Lottie stickers, which is expected.
                 console.log(`Failed to clone sticker (likely unsupported format like Lottie): ${sticker.name}`);
                 await delay(1000); // Shorter delay on fail
             }

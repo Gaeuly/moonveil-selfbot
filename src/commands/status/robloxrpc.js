@@ -72,7 +72,7 @@ module.exports = {
                 }
 
                 client.user.setActivity(rpc);
-                await message.edit(`✅ RPC status set to **Playing ${gameData.name}** on Roblox!`);
+                await message.edit(`RPC status set to **Playing ${gameData.name}** on Roblox!`);
                 break;
 
             case 'stop':
@@ -81,7 +81,7 @@ module.exports = {
                 }
                 client.user.setActivity(null);
                 rpcStartTime = null;
-                await message.edit('⏹️ Roblox RPC status has been stopped.');
+                await message.edit('Roblox RPC status has been stopped.');
                 break;
 
             default:
