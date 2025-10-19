@@ -1,152 +1,91 @@
-# GitMoon
+# moonveil-selfbot
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Code Style](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg?style=for-the-badge)](https://prettier.io)
-[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFBA5F)](https://vitejs.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en/)
-[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Discord.js Selfbot](https://img.shields.io/badge/Discord.js%20Selfbot%20v13-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://github.com/discordjs/discord.js)
+[![Discord Voice](https://img.shields.io/badge/@discordjs%2Fvoice-404EED?style=for-the-badge&logo=audio-technica&logoColor=white)](https://www.npmjs.com/package/@discordjs/voice)
+[![Google Translate](https://img.shields.io/badge/Translation%20API-4285F4?style=for-the-badge&logo=google-translate&logoColor=white)](https://www.npmjs.com/package/@vitalets/google-translate-api)
+[![Axios](https://img.shields.io/badge/HTTP%20Client-4D78E3?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
+[![Cheerio](https://img.shields.io/badge/HTML%20Parser-3CB371?style=for-the-badge&logo=cheerio&logoColor=white)](https://cheerio.js.org/)
+[![DotEnv](https://img.shields.io/badge/Configuration-FAE020?style=for-the-badge&logo=dotenv&logoColor=black)](https://github.com/motdotla/dotenv)
+[![Debug](https://img.shields.io/badge/Debugging-000000?style=for-the-badge&logo=react-query&logoColor=white)](https://www.npmjs.com/package/debug)
+[![Figlet](https://img.shields.io/badge/ASCII%20Art-FF69B4?style=for-the-badge&logo=textile&logoColor=white)](https://www.npmjs.com/package/figlet)
+[![File-Type](https://img.shields.io/badge/Mime%20Detection-00BCD4?style=for-the-badge&logo=filezilla&logoColor=white)](https://www.npmjs.com/package/file-type)
+[![Jimp](https://img.shields.io/badge/Image%20Processing-745296?style=for-the-badge&logo=jimp&logoColor=white)](https://www.npmjs.com/package/jimp)
+[![JSQR](https://img.shields.io/badge/QR%20Scanner-FFD700?style=for-the-badge&logo=barcode&logoColor=black)](https://www.npmjs.com/package/jsqr)
+[![Libsodium](https://img.shields.io/badge/Encryption-5A4FCF?style=for-the-badge&logo=nixos&logoColor=white)](https://www.npmjs.com/package/libsodium-wrappers)
+[![Luxon](https://img.shields.io/badge/Date%20Time-9C27B0?style=for-the-badge&logo=temporal&logoColor=white)](https://moment.github.io/luxon/)
+[![Math.js](https://img.shields.io/badge/Mathematics-E91E63?style=for-the-badge&logo=mathworks&logoColor=white)](https://mathjs.org/)
+[![Opusscript](https://img.shields.io/badge/Audio%20Codec-E66C39?style=for-the-badge&logo=audio-technica&logoColor=white)](https://www.npmjs.com/package/opusscript)
+[![TinyColor2](https://img.shields.io/badge/Color%20Utility-FF4500?style=for-the-badge&logo=color-flipper&logoColor=white)](https://www.npmjs.com/package/tinycolor2)
 
 ### Project Description 📝
 
-GitMoon is a web application designed to streamline and enhance the development workflow surrounding Git repositories. It offers a suite of tools for generating comprehensive README files and crafting detailed commit messages. Built with TypeScript, React, and Tailwind CSS, GitMoon provides a modern and intuitive user interface to simplify otherwise complex and time-consuming tasks.
+Moonveil is a highly advanced, feature-rich Discord selfbot designed to provide extensive automation and utility directly within the user's client environment. Built on a foundation of modern JavaScript and utilizing the specialized `discord.js-selfbot-v13` library, this project aggregates over 500 distinct commands, positioning it as one of the most comprehensive toolkits available for power users seeking unparalleled control and efficiency on the platform.
 
-This project aims to improve code maintainability and collaboration by providing developers with features that automatically create well-structured READMEs and guide them through the process of writing clear and informative commit messages. With integrations for API services like Gemini API and GitHub API, GitMoon assists users in crafting professional-quality documentation, promoting better understanding and collaboration within development teams. GitMoon is built to be deployed on Vercel, ensuring a smooth and optimized deployment experience.
+The architecture emphasizes modularity and performance, integrating crucial dependencies to handle complex tasks seamlessly. This includes advanced media manipulation via `jimp` and QR code processing with `jsqr`, real-time data retrieval using `axios` and `cheerio` for scraping, and high-fidelity voice handling facilitated by `@discordjs/voice`, `opusscript`, and `libsodium-wrappers`. Furthermore, utility commands benefit from the precision of `mathjs` for calculations and `luxon` for accurate timestamp and date management.
 
-### File Structure 🌳
-```
-├── .gitignore
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── public
-│   ├── banner.webp
-│   ├── favicon
-│   │   ├── android-chrome-192x192.png
-│   │   ├── android-chrome-512x512.png
-│   │   ├── apple-touch-icon.png
-│   │   ├── favicon-16x16.png
-│   │   ├── favicon-32x32.png
-│   │   ├── favicon.ico
-│   │   └── site.webmanifest
-│   └── gitmoon.png
-├── src
-│   ├── App.tsx
-│   ├── components
-│   │   ├── Footer.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── commit
-│   │   │   ├── ActionsSection.tsx
-│   │   │   ├── CommitLogSection.tsx
-│   │   │   ├── ConfigSection.tsx
-│   │   │   ├── DeleteSection.tsx
-│   │   │   ├── FileUploadSection.tsx
-│   │   │   ├── GuideSection.tsx
-│   │   │   ├── Shared.tsx
-│   │   │   └── Toast.tsx
-│   │   └── readme
-│   │       ├── ConfigSection.tsx
-│   │       ├── OptionsSection.tsx
-│   │       └── OutputSection.tsx
-├── hooks
-│   │   ├── useGithub.ts
-│   │   └── useReadmeGenerator.ts
-│   ├── index.css
-│   ├── lib
-│   │   ├── geminiApi.ts
-│   │   ├── githubApi.ts
-│   │   └── readme
-│   │       ├── api.ts
-│   │       └── prompt.ts
-│   ├── main.tsx
-│   ├── pages
-│   │   ├── CommitPage.tsx
-│   │   ├── LandingPage.tsx
-│   │   └── ReadmePage.tsx
-│   ├── sections
-│   │   ├── About.tsx
-│   │   ├── Feature.tsx
-│   │   └── Hero.tsx
-│   ├── types
-│   │   ├── commit.ts
-│   │   └── readme.ts
-│   └── vite-env.d.ts
-├── tailwind.config.js
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-├── vercel.json
-└── vite.config.ts
-```
+Moonveil is structured to manage vast quantities of commands logically, organized into categories such as basic utilities, AI integration, fun, and advanced cloning features. While offering an exceptional degree of customization and power, the project serves as a technical demonstration of what can be achieved with selfbot architecture, providing a detailed framework for developers interested in complex Discord automation.
 
 ### Key Features ✨
 
-- **README Generation:**  Automatically generates well-structured and informative README files based on project details and user preferences using generative AI.
-- **Commit Message Assistance:** Provides guidance and suggestions for writing clear and concise commit messages.
-- **GitHub Integration:** Seamlessly integrates with the GitHub API to fetch repository information and facilitate interactions.
-- **Modern UI:** Offers a clean, intuitive, and responsive user interface built with React and styled with Tailwind CSS.
-- **Customizable Options:** Provides various configuration options to tailor the generated README files and commit messages to specific project needs.
-- **API Integrations:** Leverages API services like Gemini API to enhance README and commit message generation.
-- **Deployment Ready:** Configured for easy deployment on Vercel, ensuring optimal performance and scalability.
-
-### Tech Stack & Tools 🛠️
-
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFBA5F)](https://vitejs.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en/)
-[![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
-[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
-[![PostCSS](https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white)](https://postcss.org/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
-[![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+*   **Extensive Command Suite:** Over 500 categorized commands, including modules for AI interaction, data tracking, user statistics, and moderation utilities.
+*   **Advanced Media Processing:** Capabilities for image resizing, manipulation, and metadata extraction using **Jimp**, alongside dedicated modules for reading and generating **QR codes** via **JSQR**.
+*   **Deep Server & Asset Cloning:** Specialized commands (`cloneserver`, `cloneemoji`) allowing for the replication of server structures and assets, leveraging advanced scraping techniques.
+*   **Real-Time Voice Interoperability:** Full support for joining and interacting within voice channels, utilizing the high-performance audio stack provided by **@discordjs/voice**, **opusscript**, and **libsodium-wrappers**.
+*   **Integrated Translation & Scraping:** Real-time language translation using **@vitalets/google-translate-api**, combined with web scraping utilities **axios** and **cheerio** for external data retrieval.
+*   **Mathematical & Temporal Utilities:** Precise handling of complex mathematical expressions via **mathjs** and robust, localized date/time formatting provided by **luxon**.
+*   **Developer-Friendly Debugging:** Comprehensive logging and environment configuration using **debug** and **dotenv** for easy setup and troubleshooting.
 
 ### Installation & Running Locally 🚀
 
-1.  Clone the repository:
+This guide assumes you have Node.js (v16.x or higher) and Git installed on your system.
+
+### Step 1: Clone the Repository
+
+Clone the project source code to your local machine.
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/YourUsername/moonveil-selfbot.git
 ```
-
-2.  Navigate to the project directory:
 
 ```bash
-cd GitMoon
+cd moonveil-selfbot
 ```
 
-3.  Install dependencies:
+### Step 2: Configure Environment Variables
+
+Copy the example configuration file and edit the `.env` file to include your Discord User Token and any required API keys.
+
+```bash
+cp example.env .env
+```
+
+**CRITICAL:** Open the newly created `.env` file and replace the placeholder values (e.g., `DISCORD_TOKEN=YOUR_USER_TOKEN_HERE`).
+
+### Step 3: Install Dependencies
+
+Install all necessary project dependencies, including binary packages required for voice functionality.
 
 ```bash
 npm install
 ```
 
-4.  Start the development server:
+### Step 4: Start the Selfbot
+
+Execute the start script defined in `package.json` to launch the selfbot client.
 
 ```bash
-npm run dev
+npm start
 ```
-
-Open your browser and navigate to `http://localhost:5173` (or the address shown in the terminal) to view the application.
 
 ### How to Contribute 🤝
 
-We welcome contributions to GitMoon! Here's how you can contribute:
+We welcome contributions to the Moonveil Selfbot project. If you wish to contribute, please adhere to the following guidelines:
 
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and ensure the code is well-documented.
-4.  Write tests for your changes.
-5.  Run the tests to ensure everything is working correctly.
-6.  Commit your changes with a clear and concise commit message.
-7.  Push your branch to your forked repository.
-8.  Create a pull request to the main branch of the original repository.
-
-Please follow the existing code style and conventions. All contributions are subject to review and approval.
+1.  **Reporting Issues:** If you encounter any bugs, performance issues, or critical failures, please open an issue detailing the steps to reproduce the problem and the expected vs. actual behavior.
+2.  **Feature Suggestions:** Submit feature requests via the Issues page. Complex features should first be discussed to ensure alignment with the project's technical direction.
+3.  **Pull Requests (PRs):**
+    *   Fork the repository and create a new branch for your feature or fix (`git checkout -b feature/my-new-command`).
+    *   Ensure your code follows existing JavaScript coding standards and includes appropriate comments.
+    *   Keep PRs focused; only submit one feature or fix per request.
+    *   Provide clear commit messages and a detailed summary of changes in the Pull Request description.
