@@ -3,7 +3,7 @@ const { delay } = require('../../utils/cloneUtils');
 module.exports = {
     name: "cloneserver",
     description: "Clones a server's structure (roles, categories, channels).",
-    aliases: ['copyserver'],
+    aliases: ['copyserver','cs'],
     cooldown: 120,
     async execute(client, message, args) {
         const sourceGuildId = args[0];
