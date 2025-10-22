@@ -1,3 +1,4 @@
+// index.js
 require('dotenv').config();
 require('libsodium-wrappers');
 require('opusscript');
